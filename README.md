@@ -8,6 +8,7 @@ How to run it
 -------------
 - Clone this repo
 - `bower install`
+- `node install`
 - open the progress.html file
 - `node render.js`
 - Watch the progress bar update

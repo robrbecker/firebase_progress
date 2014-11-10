@@ -1,0 +1,22 @@
+{
+  "name": "firebase_progress",
+  "version": "0.1.0",
+  "description": "firebase_progress",
+  "main": "render.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/robrbecker/firebase_progress.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/robrbecker/firebase_progress/issues"
+  },
+  "homepage": "https://github.com/robrbecker/firebase_progress",
+  "dependencies": {
+    "firebase": "^2.0.2"
+  }
+}
