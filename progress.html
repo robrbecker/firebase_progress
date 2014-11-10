@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <script src="bower_components/firebase/firebase.js"></script>
+    </head>
+    <body>
+        Please wait...
+        <progress id="progress" val="0" max="100"></progress>
+        <script>
+            function app() {
+                var progress = document.getElementById('progress');
+                var fb = new Firebase("https://robrbecker.firebaseio.com/");
+                var pagesRenderedRef = fb.child('pagesRendered');
+                pagesRenderedRef.set(0);
+                pagesRenderedRef.on('value', function(snapshot) {
+                    var newVal = 0;
+                    if (snapshot.val()) {
+                        newVal = snapshot.val();
+                    }
+                    progress.value = newVal;
+                });
+            }
+            window.addEventListener('DOMContentLoaded', app);
+        </script>
+    </body>
+</html>

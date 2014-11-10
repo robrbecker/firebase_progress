@@ -1,0 +1,13 @@
+{
+  "name": "firebase_progress",
+  "version": "0.1.0",
+  "authors": [
+    "Rob Becker <robrbecker@gmail.com>"
+  ],
+  "description": "Demo of how to use Firebase to handle progress updates",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "firebase": "~2.0.2"
+  }
+}
